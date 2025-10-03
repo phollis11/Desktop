@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Help Requests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 16px;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar p {
+      margin: 0 0 8px 0;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    input, select, button {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    @media (min-width: 600px) {
+      form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      input, select {
+        flex: 1;
+        min-width: 120px;
+      }
+
+      button {
+        width: auto;
+        min-width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Help Requests</h1>
+
+  <div class="top-bar">
+    <p>Logged in as: {{ user_email }}</p>
+    <p>Admin status: {{is_admin}}</p>
+    <form action="/logout" method="get">
+      <button type="submit">Logout</button>
+    </form>
+    <form action ="/admin_register" method = "post">
+      <button type ="admin_register">Admin Registration</button>
+    </form>
+  </div>
+
+  <form method="POST" action="/add">
+    <input type="text" name="name" placeholder ="Name" required>  
+    <select name="urgency" required>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="text" name="location" placeholder="Location" required>
+    <input type="text" name="description" placeholder="Description">
+    <button type="submit">Submit Ticket</button>
+  </form>
+                                                                                 
+  <table>
+    <tr>
+      <th>Ticket ID</th>
+      <th>Name</th> 
+      <th>Location</th>
+      <th>Urgency</th>
+      <th>Description</th>
+      <th>Date/Time</th>
+      <th>Status</th>
+    </tr>
+    {% for ticket in tickets %}  <!-- FOR LOOP FOR ENTERING DATA FROM tickets INTO TABLE  -->
+    <tr>
+      <td>{{ ticket[0] }}</td>
+      <td>{{ ticket[1] }}</td> <!-- Currently inputs user_id not name -->
+      <td>{{ ticket[2] }}</td>
+      <td>{{ ticket[3] }}</td>
+      <td>{{ ticket[4] }}</td>
+      <td>{{ ticket[5] }}</td>
+      <td>{{ ticket[6] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
