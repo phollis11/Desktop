@@ -1,4 +1,4 @@
-# 👋 Hi, I'm **Peyton Hollis**
+## Hi, I'm **Peyton Hollis**
 
 Welcome to my GitHub!  
 I'm a **Computer Information Science Student** building projects across algorithms, machine learning, databases, UI development, and systems programming. This is where I upload class assignments, personal projects, experiments, and tools I build while learning new technologies.
