@@ -1,4 +1,4 @@
-## Hi, I'm **Peyton Hollis**
+Hi, I'm **Peyton Hollis**
 
 Welcome to my GitHub!  
 I'm a **Computer Information Science Student** building projects across algorithms, machine learning, databases, UI development, and systems programming. This is where I upload class assignments, personal projects, experiments, and tools I build while learning new technologies.
@@ -14,14 +14,14 @@ What I’m Working On
 
 ---
 
-## Tech & Tools
+Tech & Tools
 
 ### **Languages**
 - Python  
 - Java  
 - SQL
 
-## Featured Projects
+Featured Projects
 
 ### **Form App (Short Summer Project)**
 A UI-based Python application built with Flask and Sqlite.
@@ -50,5 +50,5 @@ A TensorFlow model designed to predict NHL game outcomes.
 
 ---
 
-## Thanks for Visiting!
+Thanks for Visiting!
 
