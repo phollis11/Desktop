@@ -1,0 +1,32 @@
+#Euclid's Algorithm for calculating the greatest common denominator between any two non-negative integers
+
+def gcd(num1, num2): #gcd accepts two non-negative integers
+
+    remainder = 1 #remainder = 1 allows starting of while loop
+
+    #Testing edge cases where either number is 0, returning other number as GCD
+    if num1 == 0 :
+        return num2
+    if num2 == 0:
+        return num1
+    
+    while remainder != 0: #While loop that checks if remainder is 0, if so the loop ends
+        remainder = num1 % num2 #Modulo calculates remainder between both numbers
+        if remainder == 0 : #If remainder is 0, exit loop and return the GCD
+            return num2
+        #Updates num1 and num2 with remainder to follow steps in Euclid's Algorithm
+        num1 = num2 
+        num2 = remainder
+        
+print("Test Case, 3822 and 324. GCD is " +str(gcd(3822, 324)))
+print("Test Case, 381 and 34. GCD is " +str(gcd(381, 34)))
+print("Test Case, 24 and 324. GCD is " +str(gcd(24, 324)))
+print("Test Case, 0 and 17597. GCD is " +str(gcd(0, 17597)))
+
+
+
+
+        
+
+
+
