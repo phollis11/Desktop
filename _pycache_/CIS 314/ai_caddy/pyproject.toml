@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai_caddy"
+version = "0.0.2"
+authors = [{name = "Peyton Hollis", email = "phollis0216@gmail.com"}]
+description = "FINAL: AI Caddy Golf App. Funtioning golf score keeping system and AI caddy club suggstions."
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+"PyQt5",
+"geopy"
+]
+
+[project.urls]
+Homepage = "https://github.com/phollis11/Desktop/tree/main/_pycache_/CIS%20314/golf_app"
