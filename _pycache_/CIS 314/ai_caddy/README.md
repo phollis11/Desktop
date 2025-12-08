@@ -48,7 +48,7 @@ ai_caddy/
 ├── admin.py          # Initializes the database and sample course
 ├── golf_ai.py        # AI logic for club recommendations
 ├── golf_globals.py   # Global variables and shared state
-├── main.py           # Application entry point
+├── ai_caddy.py           # Application entry point
 ├── images/        # Images, icons, etc.
 └── README.md
 
@@ -58,6 +58,20 @@ ai_caddy/
 * AI function doesnt work well when not on course. Recommend testing AI function directly from golf_ai.py
 * Distance calculations use geodesic measurements for accuracy.
 * The project was created as the final assignment for **CIS 314**.
+* The account tab was not completed.
+
+## Potential Alterations Needed
+* Two file pathing issues in ai_caddy.py (Both should not impact program running, just showing images)
+* Need to run **admin.py** to create Musket Ridge course to use in golf app
+* Recommend testing AI caddy in **golf_ai.py** since distances are off since not at course. Makes AI caddy not work well.
+
+## Using the App
+* First register an account and login
+* Go to bag in the bottom right, and log your clubs and distances
+* Go back to main page and start a round using top left
+* Select from available courses and start round
+* Ask for club recommendation by first updating location on left bar, updating pin location on right bar, and then asking AI for the recommendation
+* Enter score for hole and continue through course until you want to end round by clicking end round button
 
 Author
 

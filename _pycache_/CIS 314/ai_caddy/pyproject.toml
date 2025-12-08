@@ -16,7 +16,9 @@ classifiers = [
 ]
 dependencies = [
 "PyQt5",
-"geopy"
+"geopy",
+"openai",
+"hashlib"
 ]
 
 [project.urls]

@@ -7,8 +7,6 @@ from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtPositioning import QGeoPositionInfoSource
 from geopy.distance import distance
 
-#from pathlib import Path
-
 #Stylesheet
 GOLFSHEET = """
 /* -----------------------------------------
