@@ -1,0 +1,25 @@
+# Background images (generated dataset)
+card_tracking/background_images/
+card_tracking/cards_dataset/
+card_tracking/cropped_cards/
+
+# Data folders
+data/images/
+data/processed/
+data/raw/
+
+# Model weights and embeddings
+model/all_embeddings.pt
+model/clip_mtg.pt
+model/image_embeddings.pt
+model/text_embeddings.pt
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs, runs, outputs
+runs/
+*.log
