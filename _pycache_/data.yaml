@@ -1,0 +1,6 @@
+path: C:/Users/pholl/OneDrive/Desktop/_pycache_/mtg_clip_model/card_tracking/cards_dataset
+train: images/train
+val: images/val
+
+names:
+  0: card
